@@ -1,4 +1,4 @@
-# cordova-dialog-gps
+# cordova-plugin-gps-dialog
 Plugin for **cordova greater or equal than v3.0.0_** to display a dialog and redirect to GPS settings when de GPS is disable.
 
 ##Installation
