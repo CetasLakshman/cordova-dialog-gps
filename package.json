@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-gps-dialogs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Cordova GPS Dialog Plugin",
   "cordova": {
     "id": "cordova-plugin-gps-dialogs",
