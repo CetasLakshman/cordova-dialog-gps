@@ -3,7 +3,7 @@ Plugin for **cordova greater or equal than v3.0.0_** to display a dialog and red
 
 ##Installation
 
-Just type the following statement in your cli Cordova.
+Just type the following statement in your cli Cordova for install.
 
 `cordova plugin add https://github.com/CetasLakshman/cordova-plugin-gps-dialogs.git`
 
