@@ -1,20 +1,17 @@
-# cordova-dialog-gps
-Plugin for **_phonegap/cordova greater or equal than v3.0.0_** to display a dialog and redirect to GPS settings when de GPS is disable.
+# cordova-plugin-gps-dialog
+Plugin for **cordova greater or equal than v3.0.0_** to display a dialog and redirect to GPS settings when de GPS is disable.
 
 ##Installation
 
-Just type the following statement in your cli Cordova or phonegap .
+Just type the following statement in your cli Cordova.
 
-`phonegap plugin add https://github.com/rodrigo-martinezd/cordova-dialog-gps.git`
-
-or
-`cordova plugin add https://github.com/rodrigo-martinezd/cordova-dialog-gps.git`
+`cordova plugin add https://github.com/CetasLakshman/cordova-plugin-gps-dialogs.git`
 
 if you want to install a specific version just add `#v<version>` to the link
 
 Example:
 
-`phonegap plugin add https://github.com/rodrigo-martinezd/cordova-dialog-gps.git#v0.0.1`
+`cordova plugin add https://github.com/CetasLakshman/cordova-plugin-gps-dialogs.git#v0.0.1`
 
 ##Use
 

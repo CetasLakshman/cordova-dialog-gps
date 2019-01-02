@@ -1,4 +1,5 @@
-package cl.rmd.cordova.dialoggps;
+
+package org.apache.cordova.dialoggps;
 
 import android.view.ViewGroup.LayoutParams;
 import android.widget.ImageView;

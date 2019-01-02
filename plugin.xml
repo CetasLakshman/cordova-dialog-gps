@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
-           id="cl.rmd.cordova.dialoggps"
-      version="0.0.2">
+           id="cordova-plugin-gps-dialogs"
+      version="1.0.0">
     <engines>
         <engine name="cordova" version=">=3.0.0" />
     </engines>
-    <name>DialogGPS</name>
-    <description>Plugin for phonegap to display a dialog to redirect to gps settings when gps are disabled.</description>
+    <name>GPS Dialog</name>
+    <description>Cordova GPS Dialog Plugin</description>
     <license>MIT</license>
     <keywords>phonegap,dialog,gps,dialogGPS</keywords>
+    <repo>https://github.com/CetasLakshman/cordova-dialog-gps.git</repo>    
  
  
     <js-module src="www/DialogGPS.js" name="DialogGPS">
@@ -19,7 +20,7 @@
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="DialogGPS">
-                <param name="android-package" value="cl.rmd.cordova.dialoggps.DialogGPS"/>
+                <param name="android-package" value="org.apache.cordova.dialoggps"/>
             </feature>
         </config-file>
  
@@ -30,7 +31,7 @@
         <source-file src="www/icon/drawable-xxhdpi/ic_location.png"  target-dir="res/drawable-xxhdpi/"/>
         <source-file src="www/icon/drawable-xxxhdpi/ic_location.png"  target-dir="res/drawable-xxxhdpi/"/>
 
-        <config-file target="AndroidManifest.xml"    parent="/manifest">
+        <config-file target="AndroidManifest.xml" parent="/manifest">
             <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
             <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
         </config-file>
