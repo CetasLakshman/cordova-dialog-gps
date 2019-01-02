@@ -8,10 +8,9 @@
     <name>GPS Dialog</name>
     <description>Cordova GPS Dialog Plugin</description>
     <license>MIT</license>
-    <keywords>phonegap,dialog,gps,dialogGPS</keywords>
-    <repo>https://github.com/CetasLakshman/cordova-dialog-gps.git</repo>    
- 
- 
+    <keywords>dialog,gps,dialogGPS</keywords>
+    <repo>https://github.com/CetasLakshman/cordova-plugin-gps-dialog.git</repo>    
+  
     <js-module src="www/DialogGPS.js" name="DialogGPS">
         <clobbers target="cordova.dialogGPS" />
     </js-module>
