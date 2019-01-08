@@ -1,7 +1,7 @@
 # cordova-plugin-gps-dialog
 Plugin for **cordova greater or equal than v3.0.0_** to display a dialog and redirect to GPS settings when de GPS is disable.
 
-##Installation
+## Installation
 
 Just type the following statement in your cli Cordova for install.
 
@@ -13,7 +13,7 @@ Example:
 
 `cordova plugin add https://github.com/CetasLakshman/cordova-plugin-gps-dialogs.git#v0.0.1`
 
-##Use
+## Use
 
 After installation , you can access the object *dialogGPS* embedded in *cordova*
   ```javascript
@@ -25,20 +25,20 @@ After installation , you can access the object *dialogGPS* embedded in *cordova*
     * @param title {string}         title of dialog
     * @param buttons {array}        array with the buttons names with a max three names.
     **/
-    cordova.dialogGPS("hello world",function(buttonIndex) {
+    cordova.plugins.dialogGPS("hello world",function(buttonIndex) {
           //do something with the buttonIndex
       });
   });
   ```
-**Remember:** Remember, the object `cordova.dialogGPS` can only be accessed after the `document` is fully charged . This occurs when *deviceready* is called. Therefore it is recommended to make the call to the object within this function .
+**Remember:** Remember, the object `cordova.plugins.dialogGPS` can only be accessed after the `document` is fully charged . This occurs when *deviceready* is called. Therefore it is recommended to make the call to the object within this function .
 
-If `cordova.dialogGPS()` was call without options this will be result to a default message. If you want to customize it,  you can passed options to the constructor.
+If `cordova.plugins.dialogGPS()` was call without options this will be result to a default message. If you want to customize it,  you can passed options to the constructor.
 
 *Default dialog on android 5.0.2*
 
 ![screenshot on lollipop (android 5.0.2)](img/Screenshot-default-lollipop.png)
 
-##Options
+## Options
 
 **Message**
 
@@ -80,7 +80,7 @@ navigatior.geolocation.getCurrentPosition(function(position){},function(error){
 function calldialog() {
   document.addEventListener("deviceready",function(){
     //default dialog
-    cordova.dialogGPS();
+    cordova.plugins.dialogGPS();
   });
 }
 ```
@@ -89,7 +89,7 @@ Here is an example with all the arguments passed:
 ```javascript
 function calldialog() {
  document.addEventListener("deviceready",function() {
-  cordova.dialogGPS("Your GPS is Disabled, this app needs to be enable to works.",//message
+  cordova.plugins.dialogGPS("Your GPS is Disabled, this app needs to be enable to works.",//message
                     "Use GPS, with wifi or 3G.",//description
                     function(buttonIndex){//callback
                       switch(buttonIndex) {
@@ -106,7 +106,7 @@ The code above result in this dialog:
 
 ![custom dialog on lollipop (android 5.0.2)](img/Screenshot-custom-lollipop.png)
 
-##License
+## License
 
 This plugin was created under the MIT license.
 
